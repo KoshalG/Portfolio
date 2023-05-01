@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/948ae63bc3.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Koshal Gupta</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#header"><img src="assets/logo.png" class="logo" alt="logo"
+              /></a>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full-Stack Developer</p>
+          <h1>Hi,I am <span>Koshal</span> Gupta.</h1>
+        </div>
+      </div>
+    </div>
+    <!--About Me-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/user.png" alt="user" />
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <br>
+            <p>
+              Hi there, my name is Koshal Gupta, and I'm an upcoming MCA
+              graduate from RIT Bangalore. As a full stack developer with a keen
+              interest in IoT, I'm always looking for opportunities to expand my
+              skill set and explore new areas of development. I believe in the
+              power of technology to make a positive impact in the world, and
+              I'm excited to be part of the next generation of developers who
+              will be driving innovation and progress. Whether I'm working on a
+              project or learning a new skill, I approach everything with a
+              passion for excellence and a commitment to continuous improvement.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Languages</span>
+                  <br />C/C++, Python, JavaScript
+                </li>
+                <li>
+                  <span>Web Technologies</span>
+                  <br />HTML, CSS
+                </li>
+                <li>
+                  <span>Version Control</span>
+                  <br />Git, GitHub
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022-24</span>
+                  <br />MCA from RIT Bangalore
+                </li>
+                <li>
+                  <span>2019-22</span>
+                  <br />BCom from BESC Kolkata
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Projects-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">Projects</h1>
+        <div class="project-list">
+          <div class="project">
+            <img src="assets/proj1.jpg" alt="proj1" />
+            <div class="layer">
+              <h3>VoiceGPT</h3>
+              <p>Voice assistant powered by chatGPT.</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+              <a href="#"><i class="fa-brands fa-square-github fa-xl"></i></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="assets/proj2.png" alt="proj2" />
+            <div class="layer">
+              <h3>Portfolio Website</h3>
+              <p>A simple website made with HTML, CSS and JS.</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+              <a href="#"><i class="fa-brands fa-square-github fa-xl"></i></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="assets/work-3.png" alt="work-3" />
+            <div class="layer">
+              <h3>Lorem Ipsum</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+              <a href="#"><i class="fa-brands fa-square-github fa-xl"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Contact-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>guptakoshal1@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>7044524564</p>
+            <div class="social-icons">
+              <a href="https://twitter.com/KoshalCodes"><i class="fa-brands
+                  fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/koshalgupta/"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/koshal-gupta-a34982224/"><i
+                  class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/KoshalG"><i class="fa-brands
+                  fa-github"></i></a>
+            </div>
+            <a href="assets/koshal.pdf" download class="btn down">Download CV</a>
+          </div>
+
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required/>
+              <input type="email" name="Email" placeholder="Your Email"
+                required/>
+              <textarea name="Message" rows="6" placeholder="Your Message"
+                required></textarea>
+              <button type="submit" class="btn down">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2021 Koshal Gupta. All rights reserved.</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
