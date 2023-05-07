@@ -234,6 +234,30 @@ nav ul li a:hover::after {
   height: 100%;
 }
 
+/* blog */
+
+.blog-col-1 {
+  flex-basis: 35%;
+}
+
+.blog-col-1 img {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.blog-col-2 {
+  flex-basis: 60%;
+}
+
+.blog {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
 /* contact */
 
 .contact-left {
@@ -403,5 +427,21 @@ nav .fa-solid {
   .copyright {
     font-size: 14px;
   }
+
+  .blog {
+    flex-direction: column;
+  }
+
+  .blog img {
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .blog-col-1, .blog-col-2 {
+    flex-basis: 100%;
+  }
+  
 
 }
